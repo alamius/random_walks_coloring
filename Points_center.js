@@ -1,0 +1,3 @@
+function Points_center() {
+	
+}
