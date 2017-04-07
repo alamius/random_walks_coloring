@@ -1,7 +1,6 @@
 function Settings_random_walk_coloring() {
 	this.max_jump = 1 + 5;
 	this.max_col = 5000;
-	this.Pixel_colors = [];
 	this.deaths = 0;
 	this.max_drawn = 0;
 	this.control_val = false;
