@@ -1,4 +1,5 @@
 var P = [];
+var Centers = [];
 var amount = 120;
 var max_jump = 1 + 5;
 var sidelength = 400;
@@ -37,6 +38,12 @@ function setup() {
     P.push(new Point());
     if (random_start_position) {
       P[i].make_random_start_pos();
+    }
+  }
+  for (i = 0; i < amount; i += 1) {
+    Centers.push(new Points_center());
+    if (Centers[i].sett.random_start_position) {
+      Centers[i].all_P_make_random_start_pos();
     }
   }
   for (x = -sidelength; x < sidelength; x += 1) {
